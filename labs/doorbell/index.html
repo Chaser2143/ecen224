@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Doorbell • ECEn 224: Intro to Computer Systems
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/ecen224/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+
+<link rel="icon" type="image/png" sizes="96x96" href=/ecen224/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/ecen224/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/ecen224/icon/favicon-16x16.png>
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+<div class="border-right" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/ecen224/"><img src="/ecen224/icon/icon.svg">
+                ECEn 224</a>
+        </div>
+
+        <div class="list-group list-group-flush">
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/overview/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-chalkboard-teacher"></i>
+                
+                Overview
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/resources/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-book"></i>
+                
+                Resources
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/coding-standard/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-terminal"></i>
+                
+                Coding Standard
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/lab-setup/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-wrench"></i>
+                
+                Lab Setup
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="https://learningsuite.byu.edu/.N7cA/cid-qWPtDGbD9Vq6/calendar" class="list-group-item list-group-item-action sidebar-item" target="_blank" rel="noopener noreferrer">
+                
+                <i class="fa-duotone fa-calendar"></i>
+                
+                Schedule
+            </a>
+            
+            
+        </div>
+
+        <div class="sidebar-heading">Labs</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/labs/getting-started/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">1</span>
+                Getting Started
+            </a>
+            
+            <a href="/ecen224/labs/command-line/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">2</span>
+                Command Line
+            </a>
+            
+            <a href="/ecen224/labs/data/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">3</span>
+                Data
+            </a>
+            
+            <a href="/ecen224/labs/image/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">4</span>
+                Image
+            </a>
+            
+            <a href="/ecen224/labs/debugging/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">5</span>
+                Debugging
+            </a>
+            
+            <a href="/ecen224/labs/display/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">6</span>
+                Display
+            </a>
+            
+            <a href="/ecen224/labs/io/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">7</span>
+                I/O
+            </a>
+            
+            <a href="/ecen224/labs/camera/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">8</span>
+                Camera
+            </a>
+            
+            <a href="/ecen224/labs/client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">9</span>
+                Client
+            </a>
+            
+            <a href="/ecen224/labs/threaded-client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">10</span>
+                Threaded Client
+            </a>
+            
+            <a href="/ecen224/labs/doorbell/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">11</span>
+                Doorbell
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Programming Assignments</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/programming-assignments/bomb-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bomb"></i>
+                
+                Bomb Lab
+            </a>
+            
+            <a href="/ecen224/programming-assignments/attack-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bow-arrow"></i>
+                
+                Attack Lab
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Homeworks</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/homework/data/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-binary"></i>
+                
+                Data
+            </a>
+            
+            <a href="/ecen224/homework/c/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-brackets-curly"></i>
+                
+                C
+            </a>
+            
+            <a href="/ecen224/homework/assembly/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-microchip"></i>
+                
+                Assembly
+            </a>
+            
+            <a href="/ecen224/homework/memory/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-memory"></i>
+                
+                Memory
+            </a>
+            
+            <a href="/ecen224/homework/io/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-server"></i>
+                
+                I/O
+            </a>
+            
+        </div>
+    </div>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+    <button class="btn btn-brand" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <a href="#" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+    
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer" href="https://github.com/byu-cpe/ecen224/issues/new?title=Suggestions+for+Doorbell+Page"><i class="fab fa-github"></i> Suggest
+                Edits</a>
+        </li>
+    </ul>
+    
+</nav>
+
+
+      <div class="container">
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Doorbell
+    </h1>
+
+    <div class="page-content">
+        
+        <div class="lab-toc col-md-6 col-lg-5">
+            <h4>Table of Contents</h4>
+            <ul>
+  <li><a href="#github-classroom">GitHub Classroom</a></li>
+  <li><a href="#objectives">Objectives</a></li>
+  <li>
+<a href="#overview">Overview</a>
+    <ul>
+      <li>
+<a href="#systemd-daemons">systemd Daemons</a>
+        <ul>
+          <li><a href="#service-files">Service Files</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#requirements">Requirements</a></li>
+  <li>
+<a href="#submission">Submission</a>
+    <ul>
+      <li><a href="#compilation">Compilation</a></li>
+      <li><a href="#gitignore">Gitignore</a></li>
+      <li><a href="#normal-stuff">Normal Stuff</a></li>
+    </ul>
+  </li>
+  <li><a href="#explore-more">Explore More!</a></li>
+</ul>
+
+        </div>
+        
+
+        <h2 id="github-classroom">GitHub Classroom</h2>
+<p>Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment.</p>
+
+<h2 id="objectives">Objectives</h2>
+<ul>
+  <li>Learn about daemons</li>
+  <li>Create a program that runs on boot</li>
+  <li>Deal with different modes of program operation</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+<p>Welcome to the end of the semester! You have come very far in your abilities to understand how computers work under the hood and how you can control them programmatically. The difference between the computer you are using now and most single-use devices that exist on the market is that your Pi Z2W in its current state still acts as any normal desktop/laptop/phone. When you turn the device on, the operating system loads and then you are expected to start any program that you wish to have running.</p>
+
+<p>This is not the case for most single-use devices. For example, when you turn on a microwave, it immediately starts heating up your food. When you turn on an electric kettle, it immediately starts heating up your water. When you turn on a doorbell, it immediately starts ringing. This is because these devices are programmed to start running as soon as they are turned on. In this lab, we will work to make the Pi Z2W act as a smart doorbell. This entails having your program run on boot.</p>
+
+<h3 id="systemd-daemons">systemd Daemons</h3>
+<p>To enable our program to run on boot in Linux, we need to understand how Linux manages its processes. Linux uses a system called <code class="language-plaintext highlighter-rouge">systemd</code> to manage its processes. <code class="language-plaintext highlighter-rouge">systemd</code> is a system and service manager that runs as PID 1 when the system boots. It is responsible for starting and stopping processes, as well as managing the boot process.</p>
+
+<p>It also manages programs that run in the background, called daemons. A daemon is a program that runs in the background and is not directly started by the user. Daemons are often used to provide services to the user, such as the <code class="language-plaintext highlighter-rouge">sshd</code> daemon that provides the ability to connect to the Pi Z2W over SSH.</p>
+
+<h4 id="service-files">Service Files</h4>
+<p>For our doorbell to run on boot, we need to create a daemon that runs our program. This is done by creating a <code class="language-plaintext highlighter-rouge">systemd</code> service file. A <code class="language-plaintext highlighter-rouge">systemd</code> service file is a file that contains information about a service that <code class="language-plaintext highlighter-rouge">systemd</code> can be used to start and stop the service.</p>
+
+<p>One specific command that can be used to monitor and control the operations of daemons in <code class="language-plaintext highlighter-rouge">systemd</code> is called <code class="language-plaintext highlighter-rouge">systemctl</code>. <code class="language-plaintext highlighter-rouge">systemctl</code> is a command line utility that can be used to control the <code class="language-plaintext highlighter-rouge">systemd</code> system and service manager. It can be used to start, stop, restart, and check the status of services.</p>
+
+<p>For example, let’s say we want to observe the <code class="language-plaintext highlighter-rouge">sshd</code> daemon on our Pi Z2W. We can use the following command to see the status of the <code class="language-plaintext highlighter-rouge">sshd</code> daemon:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status sshd    <span class="c"># Shows status of the sshd daemon</span>
+</code></pre></div></div>
+
+<p>Likewise, if we wanted to start or stop the daemon, we could use the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start sshd     <span class="c"># Starts the sshd daemon</span>
+<span class="nb">sudo </span>systemctl stop sshd      <span class="c"># Stops the sshd daemon</span>
+</code></pre></div></div>
+
+<p>However, these commands only work for daemons that are already installed on the Pi Z2W. If we want to create our own daemon, we need to create a service file that <code class="language-plaintext highlighter-rouge">systemd</code> can use to start and stop our program.</p>
+
+<p>To create a service file, we need to create a file in the <code class="language-plaintext highlighter-rouge">/etc/systemd/system</code> directory. The name of the file must end in <code class="language-plaintext highlighter-rouge">.service</code>. The contents of the file must be in the following format:</p>
+
+<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[Unit]</span>
+<span class="py">Description</span><span class="p">=</span><span class="s">Name of your service</span>
+
+<span class="nn">[Service]</span>
+<span class="py">ExecStart</span><span class="p">=</span><span class="s">command to start your program</span>
+
+<span class="nn">[Install]</span>
+<span class="py">WantedBy</span><span class="p">=</span><span class="s">multi-user.target</span>
+</code></pre></div></div>
+
+<p><strong>The file path to your executable must be absolute.</strong> This means if your ran your code by doing:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> ./my-program
+</code></pre></div></div>
+
+<p>You would be running your program using a relative path. However, if you ran your program by doing:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> /home/USERNAME/path/to/my-program
+</code></pre></div></div>
+
+<p>you would be using an absolute path. The path to your executable must be absolute in the <code class="language-plaintext highlighter-rouge">.service</code> file, so you must use the second command to run your program.</p>
+
+<p><strong>NOTE, you will also need to change any relative paths in your program to absolute paths.</strong> So if you accessed your  <code class="language-plaintext highlighter-rouge">viewer</code> folder with a relative path, your program will not work when it is run as a daemon. You must change this to an absolute path.</p>
+
+<p>Once we have created out <code class="language-plaintext highlighter-rouge">.service</code> file, we can use the commands above to start and stop our program. However, what if I want to start my program when the computer boots? We need to <strong>enable</strong> our service. To do this, we can use the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>my-service.service    <span class="c"># Enables the my-service service</span>
+</code></pre></div></div>
+
+<p>This will make it so that my-service.service will run whenever I turn on the Pi Z2W. If I don’t want my program to run when my Pi Z2W boots, I can use the following command to disable my service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl disable my-service.service    <span class="c"># Disables the my-service service</span>
+</code></pre></div></div>
+
+<h2 id="requirements">Requirements</h2>
+<p>Now that we know how to create a daemon, we can start working on our doorbell. Your doorbell should have the following features:</p>
+<ol>
+  <li>
+    <p>The program should run on boot.</p>
+  </li>
+  <li>
+    <p>When the program starts, it should show a welcome message on the screen.</p>
+  </li>
+  <li>
+    <p>When the center button is pressed, do the following in a thread:</p>
+
+    <ul>
+      <li>Your doorbell should take a picture and save it to your viewer folder.</li>
+      <li>Send your saved image to the web site.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Change the display to show the message to let the user know that doorbell was rung (i.e. “Ding dong!”). Make this message visible for 5 seconds and then change back to the initial welcome message. (This part will require threading)</p>
+  </li>
+  <li>
+    <p>When the following sequence of buttons are pressed (Up-Up-Down), take the user to the file browser menu. To go back to the original welcome message, the sequence (Left-Right-Left-Right) should be entered. The functionality inside the file viewer should have the following:</p>
+
+    <ul>
+      <li>Up and down to select the files</li>
+      <li>Center button to show the selected file for two seconds</li>
+      <li><strong>NO STATUS BAR LOGIC IS NECESSARY</strong></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="submission">Submission</h2>
+
+<h3 id="compilation">Compilation</h3>
+<p>Since a large portion of this lab’s grade depends on me successfully compiling your code, the following points must be adhered to to ensure consistency in the grading process. Any deviation in this will result in points off your grade:</p>
+
+<ul>
+  <li>The code in this lab will be compiled at the root of this lab repository (i.e. <code class="language-plaintext highlighter-rouge">doorbell-&lt;your-github-username&gt;</code>). It is your responsibility to ensure that <code class="language-plaintext highlighter-rouge">gcc</code> will work from this directory.</li>
+  <li>Your binary must output to a folder called <code class="language-plaintext highlighter-rouge">bin</code>. This folder will be marked to be ignored by <code class="language-plaintext highlighter-rouge">git</code>, meaning that I will not receive your final compiled binary to test, but rather your code which must compile successfully on my Pi Z2W.</li>
+</ul>
+
+<h3 id="gitignore">Gitignore</h3>
+<p>In this lab you are expected to ignore the following:</p>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">.vscode</code> folders</li>
+  <li>the <code class="language-plaintext highlighter-rouge">bin</code> folder where your binary is generated</li>
+</ul>
+
+<h3 id="normal-stuff">Normal Stuff</h3>
+<ul>
+  <li>
+    <p>Complete all of the requirements.</p>
+  </li>
+  <li>
+    <p>Answer the questions in the <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+  </li>
+  <li>
+    <p>To successfully submit your lab, you will need to follow the instructions in the <a href="/ecen224/lab-setup">Lab Setup</a> page, especially the <strong>Commiting and Pushing Files</strong> and <strong>Tagging Submissions</strong> section.</p>
+  </li>
+  <li>
+    <p><strong>MAKE SURE YOUR CODE FOLLOWS THE CODING STANDARD!</strong> More info on how to set that up is available on the Coding Standard page.</p>
+  </li>
+</ul>
+
+<h2 id="explore-more">Explore More!</h2>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Systemd" target="_blank" rel="noopener noreferrer">What is systemd?</a></li>
+  <li><a href="https://systemd.io/" target="_blank" rel="noopener noreferrer">systemd’s website</a></li>
+  <li><a href="https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6" target="_blank" rel="noopener noreferrer">Creating a systemd Service</a></li>
+</ul>
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/ecen224/js/jquery.visible.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

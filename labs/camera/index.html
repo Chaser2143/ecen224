@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Camera • ECEn 224: Intro to Computer Systems
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/ecen224/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+
+<link rel="icon" type="image/png" sizes="96x96" href=/ecen224/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/ecen224/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/ecen224/icon/favicon-16x16.png>
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+<div class="border-right" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/ecen224/"><img src="/ecen224/icon/icon.svg">
+                ECEn 224</a>
+        </div>
+
+        <div class="list-group list-group-flush">
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/overview/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-chalkboard-teacher"></i>
+                
+                Overview
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/resources/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-book"></i>
+                
+                Resources
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/coding-standard/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-terminal"></i>
+                
+                Coding Standard
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/lab-setup/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-wrench"></i>
+                
+                Lab Setup
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="https://learningsuite.byu.edu/.N7cA/cid-qWPtDGbD9Vq6/calendar" class="list-group-item list-group-item-action sidebar-item" target="_blank" rel="noopener noreferrer">
+                
+                <i class="fa-duotone fa-calendar"></i>
+                
+                Schedule
+            </a>
+            
+            
+        </div>
+
+        <div class="sidebar-heading">Labs</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/labs/getting-started/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">1</span>
+                Getting Started
+            </a>
+            
+            <a href="/ecen224/labs/command-line/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">2</span>
+                Command Line
+            </a>
+            
+            <a href="/ecen224/labs/data/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">3</span>
+                Data
+            </a>
+            
+            <a href="/ecen224/labs/image/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">4</span>
+                Image
+            </a>
+            
+            <a href="/ecen224/labs/debugging/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">5</span>
+                Debugging
+            </a>
+            
+            <a href="/ecen224/labs/display/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">6</span>
+                Display
+            </a>
+            
+            <a href="/ecen224/labs/io/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">7</span>
+                I/O
+            </a>
+            
+            <a href="/ecen224/labs/camera/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">8</span>
+                Camera
+            </a>
+            
+            <a href="/ecen224/labs/client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">9</span>
+                Client
+            </a>
+            
+            <a href="/ecen224/labs/threaded-client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">10</span>
+                Threaded Client
+            </a>
+            
+            <a href="/ecen224/labs/doorbell/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">11</span>
+                Doorbell
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Programming Assignments</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/programming-assignments/bomb-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bomb"></i>
+                
+                Bomb Lab
+            </a>
+            
+            <a href="/ecen224/programming-assignments/attack-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bow-arrow"></i>
+                
+                Attack Lab
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Homeworks</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/homework/data/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-binary"></i>
+                
+                Data
+            </a>
+            
+            <a href="/ecen224/homework/c/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-brackets-curly"></i>
+                
+                C
+            </a>
+            
+            <a href="/ecen224/homework/assembly/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-microchip"></i>
+                
+                Assembly
+            </a>
+            
+            <a href="/ecen224/homework/memory/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-memory"></i>
+                
+                Memory
+            </a>
+            
+            <a href="/ecen224/homework/io/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-server"></i>
+                
+                I/O
+            </a>
+            
+        </div>
+    </div>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+    <button class="btn btn-brand" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <a href="#" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+    
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer" href="https://github.com/byu-cpe/ecen224/issues/new?title=Suggestions+for+Camera+Page"><i class="fab fa-github"></i> Suggest
+                Edits</a>
+        </li>
+    </ul>
+    
+</nav>
+
+
+      <div class="container">
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Camera
+    </h1>
+
+    <div class="page-content">
+        
+        <div class="lab-toc col-md-6 col-lg-5">
+            <h4>Table of Contents</h4>
+            <ul>
+  <li><a href="#github-classroom">GitHub Classroom</a></li>
+  <li><a href="#objectives">Objectives</a></li>
+  <li>
+<a href="#overview">Overview</a>
+    <ul>
+      <li><a href="#connecting-the-camera">Connecting the Camera</a></li>
+      <li>
+<a href="#doorbell-case">Doorbell Case</a>
+        <ul>
+          <li><a href="#case-lid">Case Lid</a></li>
+          <li><a href="#lcd-screen-standoffs">LCD Screen Standoffs</a></li>
+          <li><a href="#case-bottom">Case Bottom</a></li>
+          <li><a href="#assembly">Assembly</a></li>
+        </ul>
+      </li>
+      <li><a href="#libcamera-libraries">Libcamera Libraries</a></li>
+      <li><a href="#creating-large-buffers">Creating Large Buffers</a></li>
+      <li><a href="#writing-to-a-file">Writing to a File</a></li>
+    </ul>
+  </li>
+  <li><a href="#requirements">Requirements</a></li>
+  <li>
+<a href="#submission">Submission</a>
+    <ul>
+      <li><a href="#compilation">Compilation</a></li>
+      <li><a href="#gitignore">Gitignore</a></li>
+      <li><a href="#normal-stuff">Normal Stuff</a></li>
+    </ul>
+  </li>
+  <li><a href="#explore-more">Explore More!</a></li>
+</ul>
+
+        </div>
+        
+
+        <h2 id="github-classroom">GitHub Classroom</h2>
+<p>Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment.</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ul>
+  <li>Take a picture with the camera</li>
+  <li>Handle raw data in a buffer</li>
+  <li>Write a <code class="language-plaintext highlighter-rouge">.bmp</code> file</li>
+  <li>Update viewer interface</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>In the past labs, much time has been spent making sure the files of the camera are easily accessible and represented on the LCD screen of your Pi Z2W kits. In this lab you will be expected to integrate a camera module to your design and take pictures.</p>
+
+<h3 id="connecting-the-camera">Connecting the Camera</h3>
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="/ecen224/assets/camera/pi-camera.png" alt="Units of the course.">
+  <figcaption style="text-align: center;">The Raspberry Pi Zero 2 W with the camera unit and connection cable. In this lab we will be using the larger cable and wrap it around the back of the Pi Z2W.</figcaption>
+</figure>
+
+<p>In this lab you have received a camera kit. This kit comes with the camera module and two ribbons of different lengths. <strong>WE WILL BE USING THE LONGER OF THESE TWO RIBBONS.</strong> Follow the following bullet points to connect the camera to your Pi Z2W unit.</p>
+
+<ul>
+  <li>Connect the ribbon to both the Pi Z2W and the camera module as indicated in the figure above.</li>
+  <li>Make sure that the orientation is correct (i.e. the exposed pins of the ribbon should be on the side of the PCB, not facing up).</li>
+  <li>Be gentle with the ribbons and their corresponding connectors. These components are fragile and a damaged ribbon could cause your system not to work!</li>
+</ul>
+
+<h3 id="doorbell-case">Doorbell Case</h3>
+
+<!-- Import maps polyfill -->
+<!-- Remove this when import maps will be widely supported -->
+<script async="" src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+<script type="importmap">
+    {
+        "imports": {
+            "three": "../../assets/three.module.js"
+        }
+    }
+</script>
+
+<script type="module">
+
+    import * as THREE from 'three';
+
+    import { OrbitControls } from '../../assets/OrbitControls.js';
+    import { ThreeMFLoader } from '../../assets/3MFLoader.js';
+
+    let camera, scene, renderer, object, loader, controls;
+
+    var container = document.getElementById('camera-lid');
+
+    init();
+
+    function init() {
+
+        renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( 750, 750 );
+        renderer.setClearColor( 0x000000, 0 ); // the default
+        container.appendChild( renderer.domElement );
+        renderer.domElement.style.cursor = "grab";
+
+
+        scene = new THREE.Scene();
+
+        scene.add( new THREE.AmbientLight( 0xffffff, 0.2 ) );
+
+        camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 500 );
+
+        // Z is up for objects intended to be 3D printed.
+
+        camera.up.set( 0, 0, 1 );
+        camera.position.set( - 100, - 250, 100 );
+        scene.add( camera );
+
+        controls = new OrbitControls( camera, renderer.domElement );
+        controls.addEventListener( 'change', render );
+        controls.minDistance = 100;
+        controls.maxDistance = 1000;
+        controls.enablePan = false;
+        controls.update();
+
+        const pointLight = new THREE.PointLight( 0xffffff, 0.8 );
+        camera.add( pointLight );
+
+        const manager = new THREE.LoadingManager();
+
+        manager.onLoad = function () {
+
+            const aabb = new THREE.Box3().setFromObject( object );
+            const center = aabb.getCenter( new THREE.Vector3() );
+
+            object.position.x += ( object.position.x - center.x );
+            object.position.y += ( object.position.y - center.y );
+            object.position.z += ( object.position.z - center.z );
+
+            controls.reset();
+
+            scene.add( object );
+            render();
+
+        };
+
+        loader = new ThreeMFLoader( manager );
+        loadAsset( '../../assets/camera/smart-doorbell-case.3mf' );
+
+        // window.addEventListener( 'resize', onWindowResize );
+
+    }
+
+    function loadAsset( asset ) {
+
+        loader.load( asset, function ( group ) {
+
+            if ( object ) {
+
+                object.traverse( function ( child ) {
+
+                    if ( child.material ) child.material.dispose();
+                    if ( child.material && child.material.map ) child.material.map.dispose();
+                    if ( child.geometry ) child.geometry.dispose();
+
+                } );
+
+                scene.remove( object );
+
+            }
+
+            object = group;
+
+        } );
+
+    }
+
+    function onWindowResize() {
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+        render();
+
+    }
+
+    function render() {
+
+        renderer.render( scene, camera );
+
+    }
+
+</script>
+
+<script type="module">
+
+    import * as THREE from 'three';
+
+    import { OrbitControls } from '../../assets/OrbitControls.js';
+    import { ThreeMFLoader } from '../../assets/3MFLoader.js';
+
+    let camera, scene, renderer, object, loader, controls;
+
+    var container = document.getElementById('camera-body');
+
+    init();
+
+    function init() {
+
+        renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( 500, 300 );
+        renderer.setClearColor( 0x000000, 0 ); // the default
+        container.appendChild( renderer.domElement );
+        renderer.domElement.style.cursor = "grab";
+
+        scene = new THREE.Scene();
+
+        scene.add( new THREE.AmbientLight( 0xffffff, 0.2 ) );
+
+        camera = new THREE.PerspectiveCamera( 15, window.innerWidth / window.innerHeight, 1, 500 );
+
+        // Z is up for objects intended to be 3D printed.
+
+        camera.up.set( 0, 0, 1 );
+        camera.position.set( - 100, - 250, 100 );
+        scene.add( camera );
+
+        controls = new OrbitControls( camera, renderer.domElement );
+        controls.addEventListener( 'change', render );
+        controls.minDistance = 50;
+        controls.maxDistance = 400;
+        controls.enablePan = false;
+        controls.update();
+
+        const pointLight = new THREE.PointLight( 0xffffff, 0.8 );
+        camera.add( pointLight );
+
+        const manager = new THREE.LoadingManager();
+
+        manager.onLoad = function () {
+
+            const aabb = new THREE.Box3().setFromObject( object );
+            const center = aabb.getCenter( new THREE.Vector3() );
+
+            object.position.x += ( object.position.x - center.x );
+            object.position.y += ( object.position.y - center.y );
+            object.position.z += ( object.position.z - center.z );
+
+            controls.reset();
+
+            scene.add( object );
+            render();
+
+        };
+
+        loader = new ThreeMFLoader( manager );
+        loadAsset( '../../assets/cam-case-sss.3mf' );
+
+        // window.addEventListener( 'resize', onWindowResize );
+
+    }
+
+    function loadAsset( asset ) {
+
+        loader.load( asset, function ( group ) {
+
+            if ( object ) {
+
+                object.traverse( function ( child ) {
+
+                    if ( child.material ) child.material.dispose();
+                    if ( child.material && child.material.map ) child.material.map.dispose();
+                    if ( child.geometry ) child.geometry.dispose();
+
+                } );
+
+                scene.remove( object );
+
+            }
+
+            object = group;
+
+        } );
+
+    }
+
+    function onWindowResize() {
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+        render();
+
+    }
+
+    function render() {
+
+        renderer.render( scene, camera );
+
+    }
+
+</script>
+
+<p><span></span></p>
+<figure class="image mx-auto" style="max-width: 750px">
+    <div id="camera-lid"></div>
+  <figcaption style="text-align: center;">Doorbell case 3D printed file. You will need to attach the camera module to the standoffs on the lid. Note that the button in this file is not included in the case you will receive in this lab.</figcaption>
+</figure>
+
+<p>In this lab, you were also given a 3D printed enclosure for your Pi Z2W kit. Every final system comes with its proper enclosure. Make sure you pick colors that are fun for you!</p>
+
+<h4 id="case-lid">Case Lid</h4>
+
+<p>As visible in the 3D model above, there are several components that comprise this enclosure. The top of the case is the long, rectangular part with holes for the camera, LCD screen, and button respectively. You’ll notice that around the camera holes are four standoffs. These standoffs correspond to the holes in the camera module mentioned in the section before. To connect properly, put the camera module through the hole of the lid and secure with the provided screws. (Make sure to remove the film over the camera module lens for the best results before mounting it to the case.)</p>
+
+<h4 id="lcd-screen-standoffs">LCD Screen Standoffs</h4>
+<p>These are the two rings seen in the 3D model above. These will go between the standoffs for the LCD screen and your Pi Z2W. Having these in place will ensure that your HAT is installed rigidly on your Pi Z2W and will make sure that the screen stays at the correct angle when your kit is fully enclosed in your case.</p>
+
+<h4 id="case-bottom">Case Bottom</h4>
+
+<p>This component is rather simple. It is the other large object in the 3D model with a rectangular hole in its ide for the ports on your Pi Z2W.S You’ll notice that when you mounted your LCD and button HAT from the last module, there were two holes left over on the Pi Z2W itself that don’t have any hardware connected to it. It is these holes that will slip onto the internal pegs of the bottom of the case.</p>
+
+<h4 id="assembly">Assembly</h4>
+<p>To put the entire case together:</p>
+
+<ol>
+  <li>Install the spacer rings onto the standoffs for your LCD and button HAT.</li>
+  <li>Mount the camera to the top lid with screws</li>
+  <li>Wrap the ribbon around the back of the Pi Z2W so that the camera lens is facing the same way as the LCD screen.</li>
+  <li>Place Pi Z2W onto the pegs of the bottom part of the case. Make sure that the usb ports are visible through the port window (the rectangular hole on the bottom).</li>
+  <li>Line up the lid of the case with the bottom components, ensuring that the camera ribbon is not being pinched and that the holes in the lid line up with the button and the LCD screen.</li>
+  <li>Snap the lid onto the bottom of the case.</li>
+</ol>
+
+<h3 id="libcamera-libraries">Libcamera Libraries</h3>
+
+<p>In order to interface with our new camera module correctly, new vendor libraries will need to be installed. Instead of installing the libraries from source as we did with the BCM2835 package, we will be using the package manager to install our files.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install dependencies for libcamera</span>
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> libcamera-dev libjpeg-dev libtiff5-dev
+
+<span class="c"># Install dependencies for libcamera-apps</span>
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> cmake libboost-program-options-dev libdrm-dev libexif-dev
+</code></pre></div></div>
+
+<h3 id="creating-large-buffers">Creating Large Buffers</h3>
+<p>The skills that you need to complete this lab are very closely related to the skills you needed for the last lab. You are expected to capture a very large buffer of information that comes from a camera and store it in a buffer (<code class="language-plaintext highlighter-rouge">uint8_t *</code>) in C.</p>
+
+<p>Normally, if we knew the size of these buffers, we would be able to create a regular array in C:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">uint8_t</span> <span class="n">my_new_buf</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>    <span class="c1">// Create a buffer of a known size</span>
+</code></pre></div></div>
+
+<p>However, this becomes difficult when our buffers become very large. For example, the buffers that you dealt with in the <strong>Image</strong> lab had billions of values in it! This is much too large for variables that are declared on the stack. Instead, you will need to use <code class="language-plaintext highlighter-rouge">malloc()</code> in conjunction with an unbounded array:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">uint8_t</span> <span class="o">*</span> <span class="n">my_new_buf</span> <span class="o">=</span> <span class="p">(</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">uint8_t</span><span class="p">)</span> <span class="o">*</span> <span class="n">SIZEOFYOURBUFFER</span><span class="p">);</span>
+
+<span class="c1">// Whenever we are done with a malloc'd buffer in C, don't forget to call the following line:</span>
+<span class="n">free</span><span class="p">(</span><span class="n">my_new_buf</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Breaking down the <code class="language-plaintext highlighter-rouge">malloc</code> command we see that:</p>
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">(uint8_t *)</code>: This casts the the results of the <code class="language-plaintext highlighter-rouge">malloc</code> command to match the type of our buffer</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">sizeof(uint8_t)</code>: This is the size of the type of value that will be in our buffer</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">SIZEOFYOURBUFFER</code>: This is a placeholder for your the actual length that you want your buffer to be.</li>
+</ul>
+
+<p>This creates your buffer in the heap where there is much more space for larger variables like this. However, whenever we declare something in C and manage its memory, we must remember to call <code class="language-plaintext highlighter-rouge">free()</code> on the object once we are done. If this is not done, then there will be memory leaks inside of your program which could potentially grind your system to a halt.</p>
+
+<h3 id="writing-to-a-file">Writing to a File</h3>
+<p>You’ll notice in your lab files for this lab, you are provided with a <code class="language-plaintext highlighter-rouge">camera.h</code> and a partially filled in <code class="language-plaintext highlighter-rouge">camera.c</code>.</p>
+
+<p>In this lab you will be expected to capture image data from a camera, save it to a file, and then show it on the screen of your new smart doorbell. In order to write information to files in C, you will be expected to know one more function than you already do: <code class="language-plaintext highlighter-rouge">fwrite()</code>.</p>
+
+<p>Much like reading a files as you did in the last lab, to write, you will need to open a file using <code class="language-plaintext highlighter-rouge">fopen()</code>. You may be thinking, how can I open a file when it doesn’t exist yet? With <code class="language-plaintext highlighter-rouge">fopen()</code> you can name the file you want to create and what kind of mode you want to create it in by using <code class="language-plaintext highlighter-rouge">fopen()</code>. For example, to create a new file named “banana.txt”, I would do the following:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span><span class="p">;</span>
+<span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">"banana.txt"</span><span class="p">,</span> <span class="s">"w"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The second command in <code class="language-plaintext highlighter-rouge">fopen()</code> is mode we want to open the file in. This allows the compiler to know what type of content will be written to the file. In our example above, we want to write ASCII text to the file (as implied with the <code class="language-plaintext highlighter-rouge">.txt</code> extension), so we use the <code class="language-plaintext highlighter-rouge">w</code> mode. Other special modes for <code class="language-plaintext highlighter-rouge">fopen()</code> can be seen in the following table below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">r</code></td>
+      <td>Open text file for reading.  The stream is positioned at the beginning of the file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">r+</code></td>
+      <td>Open for reading and writing.  The stream is positioned at the beginning of the file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">w</code></td>
+      <td>Truncate file to zero length or create text file for writing.  The stream is positioned at the beginning of the file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">w+</code></td>
+      <td>Open for reading and writing.  The file is created if it does not exist, otherwise it is truncated.  The stream is positioned at the beginning of the file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">a</code></td>
+      <td>Open for appending (writing at end of file).  The file is created if it does not exist.  The stream is positioned at the end of the file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">a+</code></td>
+      <td>Open for reading and appending (writing at end of file). The file is created if it does not exist.  Output is always appended to the end of the file.  POSIX is silent on what the initial read position is when using this mode. For glibc, the initial file position for reading is at the beginning of the file, but for Android/BSD/MacOS, the initial file position for reading is at the end of the file.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>It is considered good practice to add a <code class="language-plaintext highlighter-rouge">b</code> at the end of the letter if you intend to write to a file in a binary format (i.e. <code class="language-plaintext highlighter-rouge">.bmp</code> files) to indicate your intent, however this extra <code class="language-plaintext highlighter-rouge">b</code> is not enforced on many modern systems like Linux.</p>
+
+<p>After the file is opened, you can then use the <code class="language-plaintext highlighter-rouge">fwrite()</code> command to write to this opened file. Instructions on how to use <code class="language-plaintext highlighter-rouge">fwrite()</code> can be found in the corresponding link in the <strong>Explore More!</strong> section at the bottom of the page. Don’t forget to use <code class="language-plaintext highlighter-rouge">fclose()</code> on the file pointer when you are done writing the file!</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>In this lab you should accomplish the following:</p>
+<ul>
+  <li>Follow the instructions in the <strong>Connecting the Camera</strong> and <strong>Libcamera Libraries</strong> sections to prepare your Pi Z2W to take pictures.</li>
+  <li>Copy your code from the previous lab into the cloned repository for this lab on your Pi Z2W.</li>
+  <li>Assign the right button (or the down button in code) to do what the center button did in the previous lab. When you push the dpad to the right position, the file that is selected should be displayed.</li>
+  <li>Reassign the center button to do the following:
+    <ul>
+      <li>Take a photo with the Pi Z2W’s camera</li>
+      <li>Save the raw data received from the capture to a <code class="language-plaintext highlighter-rouge">.bmp</code> file. The files must be named <code class="language-plaintext highlighter-rouge">doorbell-&lt;n&gt;.bmp</code> where <code class="language-plaintext highlighter-rouge">&lt;n&gt;</code> is replaced by the current number of pictures taken.</li>
+      <li>Your code should save up to 5 <code class="language-plaintext highlighter-rouge">.bmp</code> images. If a 6th image is taken, <code class="language-plaintext highlighter-rouge">doorbell-1.bmp</code> should be overwritten, if a 7th is taken <code class="language-plaintext highlighter-rouge">doorbell-2.bmp</code> should be overwritten, etc.</li>
+      <li>Update your fileviewer code to include the new bitmap files that you save. (<strong>HINT:</strong> You may need to update your previous array of strings that contain file names to be big enough to hold the <em>maximum</em> amount of files that could be had in this lab.)</li>
+      <li>Show your most recent photo for 5 seconds before you return to the file viewer.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+
+<h3 id="compilation">Compilation</h3>
+<p>Since a large portion of this lab’s grade depends on me successfully compiling your code, the following points must be adhered to to ensure consistency in the grading process. Any deviation in this will result in points off your grade:</p>
+
+<ul>
+  <li>The code in this lab will be compiled at the root of this lab repository (i.e. <code class="language-plaintext highlighter-rouge">camera-&lt;your-github-username&gt;</code>). It is your responsibility to ensure that <code class="language-plaintext highlighter-rouge">gcc</code> will work from this directory.</li>
+  <li>Your binary must output to a folder called <code class="language-plaintext highlighter-rouge">bin</code>. This folder will be marked to be ignored by <code class="language-plaintext highlighter-rouge">git</code>, meaning that I will not receive your final compiled binary to test, but rather your code which must compile successfully on my Pi Z2W.</li>
+</ul>
+
+<h3 id="gitignore">Gitignore</h3>
+<p>In this lab you are expected to ignore the following:</p>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">.vscode</code> folders</li>
+  <li>the <code class="language-plaintext highlighter-rouge">bin</code> folder where your binary is generated</li>
+</ul>
+
+<h3 id="normal-stuff">Normal Stuff</h3>
+<ul>
+  <li>
+    <p>Complete all of the requirements.</p>
+  </li>
+  <li>
+    <p>Answer the questions in the <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+  </li>
+  <li>
+    <p>To successfully submit your lab, you will need to follow the instructions in the <a href="/ecen224/lab-setup">Lab Setup</a> page, especially the <strong>Commiting and Pushing Files</strong> and <strong>Tagging Submissions</strong> section.</p>
+  </li>
+  <li>
+    <p><strong>MAKE SURE YOUR CODE FOLLOWS THE CODING STANDARD!</strong> More info on how to set that up is available on the Coding Standard page.</p>
+  </li>
+</ul>
+
+<h2 id="explore-more">Explore More!</h2>
+<ul>
+  <li><a href="https://www.tutorialspoint.com/c_standard_library/c_function_fwrite.htm" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">fwrite()</code> in C</a></li>
+  <li><a href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/" target="_blank" rel="noopener noreferrer">Memory Allocation in C</a></li>
+  <li><a href="https://www.arducam.com/raspberry-pi-camera-pinout/" target="_blank" rel="noopener noreferrer">Connect Camera to Raspberry Pi</a></li>
+</ul>
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/ecen224/js/jquery.visible.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Getting Started • ECEn 224: Intro to Computer Systems
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/ecen224/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+
+<link rel="icon" type="image/png" sizes="96x96" href=/ecen224/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/ecen224/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/ecen224/icon/favicon-16x16.png>
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+<div class="border-right" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/ecen224/"><img src="/ecen224/icon/icon.svg">
+                ECEn 224</a>
+        </div>
+
+        <div class="list-group list-group-flush">
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/overview/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-chalkboard-teacher"></i>
+                
+                Overview
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/resources/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-book"></i>
+                
+                Resources
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/coding-standard/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-terminal"></i>
+                
+                Coding Standard
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/lab-setup/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-wrench"></i>
+                
+                Lab Setup
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="https://learningsuite.byu.edu/.N7cA/cid-qWPtDGbD9Vq6/calendar" class="list-group-item list-group-item-action sidebar-item" target="_blank" rel="noopener noreferrer">
+                
+                <i class="fa-duotone fa-calendar"></i>
+                
+                Schedule
+            </a>
+            
+            
+        </div>
+
+        <div class="sidebar-heading">Labs</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/labs/getting-started/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">1</span>
+                Getting Started
+            </a>
+            
+            <a href="/ecen224/labs/command-line/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">2</span>
+                Command Line
+            </a>
+            
+            <a href="/ecen224/labs/data/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">3</span>
+                Data
+            </a>
+            
+            <a href="/ecen224/labs/image/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">4</span>
+                Image
+            </a>
+            
+            <a href="/ecen224/labs/debugging/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">5</span>
+                Debugging
+            </a>
+            
+            <a href="/ecen224/labs/display/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">6</span>
+                Display
+            </a>
+            
+            <a href="/ecen224/labs/io/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">7</span>
+                I/O
+            </a>
+            
+            <a href="/ecen224/labs/camera/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">8</span>
+                Camera
+            </a>
+            
+            <a href="/ecen224/labs/client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">9</span>
+                Client
+            </a>
+            
+            <a href="/ecen224/labs/threaded-client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">10</span>
+                Threaded Client
+            </a>
+            
+            <a href="/ecen224/labs/doorbell/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">11</span>
+                Doorbell
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Programming Assignments</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/programming-assignments/bomb-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bomb"></i>
+                
+                Bomb Lab
+            </a>
+            
+            <a href="/ecen224/programming-assignments/attack-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bow-arrow"></i>
+                
+                Attack Lab
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Homeworks</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/homework/data/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-binary"></i>
+                
+                Data
+            </a>
+            
+            <a href="/ecen224/homework/c/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-brackets-curly"></i>
+                
+                C
+            </a>
+            
+            <a href="/ecen224/homework/assembly/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-microchip"></i>
+                
+                Assembly
+            </a>
+            
+            <a href="/ecen224/homework/memory/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-memory"></i>
+                
+                Memory
+            </a>
+            
+            <a href="/ecen224/homework/io/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-server"></i>
+                
+                I/O
+            </a>
+            
+        </div>
+    </div>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+    <button class="btn btn-brand" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <a href="#" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+    
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer" href="https://github.com/byu-cpe/ecen224/issues/new?title=Suggestions+for+Getting%20Started+Page"><i class="fab fa-github"></i> Suggest
+                Edits</a>
+        </li>
+    </ul>
+    
+</nav>
+
+
+      <div class="container">
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Getting Started
+    </h1>
+
+    <div class="page-content">
+        
+        <div class="lab-toc col-md-6 col-lg-5">
+            <h4>Table of Contents</h4>
+            <ul>
+  <li><a href="#github-classroom">GitHub Classroom</a></li>
+  <li><a href="#objectives">Objectives</a></li>
+  <li>
+<a href="#overview">Overview</a>
+    <ul>
+      <li><a href="#setting-up-the-sd-card">Setting up the SD Card</a></li>
+      <li><a href="#connect-to-pi-z2w-remotely">Connect to Pi Z2W Remotely</a></li>
+      <li><a href="#increasing-swap-file-size">Increasing Swap File Size</a></li>
+      <li><a href="#connect-with-vscode">Connect with VSCode</a></li>
+      <li><a href="#create-ssh-key-for-github">Create SSH key for GitHub</a></li>
+      <li><a href="#setup-github-repository">Setup GitHub Repository</a></li>
+    </ul>
+  </li>
+  <li><a href="#lab-submission">Lab Submission</a></li>
+  <li><a href="#explore-more">Explore More!</a></li>
+</ul>
+
+        </div>
+        
+
+        <h2 id="github-classroom">GitHub Classroom</h2>
+<p>Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment.</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ul>
+  <li>Become familiar with the tools used for this lab</li>
+  <li>Understand how to setup a single board computer</li>
+  <li>Be able to gain access remotely to the Pi Z2W</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="/ecen224/assets/getting-started/pi-z2w.png" alt="Units of the course.">
+  <figcaption style="text-align: center;">The Raspberry Pi Zero 2 W with the SD card port outlined in magenta, the mini HDMI port outlined in light blue, and the power micro USB port outlined in yellow.</figcaption>
+</figure>
+
+<p>In this class we will be using the <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" target="_blank" rel="noopener noreferrer">Raspberry Pi Zero 2 W</a> (or Pi Z2W for short) as the platform to explore the fundamentals of computing taught throughout the semester. In this lab you will be setting up the <a href="https://en.wikipedia.org/wiki/Single-board_computer" target="_blank" rel="noopener noreferrer">single board computer</a> so that it is capable of handling all the labs in this course. There are 3 parts to this lab:</p>
+
+<ul>
+  <li>Flash and configure the Pi Z2W</li>
+  <li>Gain remote access to the Pi Z2W</li>
+  <li>Development environment setup</li>
+</ul>
+
+<h3 id="setting-up-the-sd-card">Setting up the SD Card</h3>
+<p>In order to make use of the Pi Z2W, we will need to put an operating system onto its SD card. An <a href="https://en.wikipedia.org/wiki/Operating_system" target="_blank" rel="noopener noreferrer"><strong>operating system</strong></a> (OS), simply put, is a collection of programs which allows a user to interact with a device’s hardware. For users of PCs, this collection of programs is called <a href="https://www.microsoft.com/en-us/windows?r=1" target="_blank" rel="noopener noreferrer">Microsoft Windows</a>, for Mac users <a href="https://www.apple.com/za/macos/what-is/" target="_blank" rel="noopener noreferrer">macOS</a>, and for Linux users there exists a wide variety of <a href="https://itsfoss.com/what-is-linux-distribution/#:~:text=Your%20distributions%20also%20takes%20the,as%20Linux%2Dbased%20operating%20systems." target="_blank" rel="noopener noreferrer">distros</a> to choose from.</p>
+
+<p>In this lab we will become familiar with a distinct version of Linux called <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noopener noreferrer">Raspberry Pi OS</a> (formerly known as Raspbian) which was made specifically for devices like the Pi Z2W.</p>
+
+<ol>
+  <li>In order to load Raspberry Pi OS to the SD card we will use the <a href="https://www.raspberrypi.com/news/raspberry-pi-imager-imaging-utility/" target="_blank" rel="noopener noreferrer">Raspberry Pi Imager</a> tool. On your lab machine go to the <strong>Activities</strong> menu (in the upper lefthand corner) and then type in <code class="language-plaintext highlighter-rouge">imager</code>. Click on the icon that looks like a raspberry. You should see the following window open:
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/imager-start.png" alt="imager-start">
+ </figure>
+  </li>
+  <li>
+    <p>Select the <strong>CHOOSE OS</strong> option. Then click on <strong>Raspberry Pi OS (other) &gt; Raspberry Pi OS Lite (64-bit)</strong>. This is the OS that will be written to the SD card. Note that the <strong>Lite</strong> option means that there will be no point-and-click navigation with the OS like you would be used to in Windows and macOS. Instead we will use the <strong>command line</strong> to get around.</p>
+  </li>
+  <li>
+    <p>Next we will configure some of the OS settings by clicking on the <img src="/ecen224/assets/getting-started/config-gear.png" alt="gear" width="6%"> icon. This brings you to the <strong>Advanced Options</strong> menu:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/advanced-options.png" alt="advanced-options">
+ </figure>
+  </li>
+  <li>
+    <p>Change the following values in the menu according to the table below:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Setting</th>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Set hostname:</td>
+          <td><code class="language-plaintext highlighter-rouge">doorbell-&lt;your_netid&gt;</code></td>
+          <td>This will be the name of your Pi Z2W. This will make it easier to find on the network.</td>
+        </tr>
+        <tr>
+          <td>Enable SSH:</td>
+          <td>Check <strong>Enable SSH</strong> and select <strong>Use password authentication</strong>
+</td>
+          <td>This allows you to login into your Pi Z2W from anywhere on the network with the <code class="language-plaintext highlighter-rouge">ssh</code> tool by using a username and password.</td>
+        </tr>
+        <tr>
+          <td>Set username and password:</td>
+          <td>Any username and password you desire (make sure it is secure).</td>
+          <td>We change these values from the default so that you can protect your projects. You are responsible for remembering this username and password! <strong>Any loss of these credentials may require you to re-setup your Pi Z2W.</strong>
+</td>
+        </tr>
+        <tr>
+          <td>Set locate settings:</td>
+          <td>Timezone: <strong>America/Denver</strong><br>Keyboard Layout: <strong>us</strong>
+</td>
+          <td>This makes sure that the region the Pi Z2W is in the MDT timezone with the US keyboard layout.</td>
+        </tr>
+        <tr>
+          <td>Configure Wireless LAN*</td>
+          <td>SSID: <strong>name of WiFi network at home</strong><br>Password:<strong>password of network</strong>
+</td>
+          <td>In case you want to work with the Pi Z2W outside of the Digital Lab.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="text-align: right; font-size: 10pt;">*optional configurations</p>
+  </li>
+  <li>
+    <p>Now that we have correctly configured the OS settings, we will write the OS to the SD card that came with your Pi Z2W kit. Make sure that your SD card is plugged into the USB adapter and that the adapter is plugged into the lab computer.</p>
+  </li>
+  <li>
+    <p>Select <strong>CHOOSE STORAGE</strong> on the imager. A window that allows you to select the SD card will pop up:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/select-device.png" alt="select-device">
+ </figure>
+  </li>
+  <li>
+    <p>Select the SD card and click <strong>WRITE</strong> to start writing the OS to the SD card. A pop-up window will ask you if you want to erase all contents on the SD card before continuing, select <strong>YES</strong> and continue with the write process. The writing process will take a while.</p>
+  </li>
+  <li>
+    <p>Once the writing process finishes, remove the SD card from your laptop and insert it into the SD card slot of the Pi Z2W.</p>
+  </li>
+  <li>
+    <p>Plug in the PoE adapter (the white brick) into the <strong>first</strong> micro USB port (the only one not circled in the figure at the beginning of this lab) to power up and supply internet to Pi Z2W. It is not necessary to have power and PoE plugged in at the same time.</p>
+
+    <p>The boot process will take a while, so wait at least two minutes (or until the green light starts flashing) to move to the next section.</p>
+  </li>
+</ol>
+
+<!-- This depends on whether or not the CSRs give us HDMI cables in future semesters -->
+
+<!-- Connect the mini HDMI cable adapter (connected to the HDMI out of your lab station's monitor), the USB-Ethernet adapter, and power cable to the corresponding ports (in that order or else the video for the device will not load correctly). If all worked correctly, you should see a splash screen on your monitor followed by a lot of scrolling text. You will know that your installation is successful if you see the following prompt on your screen:
+
+```
+doorbell-<your_netid> login: _
+``` -->
+
+<h3 id="connect-to-pi-z2w-remotely">Connect to Pi Z2W Remotely</h3>
+<p>Now that your Pi Z2W has Raspberry Pi OS Lite installed and is connected to the lab network, we are able to connect to the it remotely using <code class="language-plaintext highlighter-rouge">ssh</code>. A remote connection means that you are able to log into a computer (like the Pi Z2W) <em>from</em> a different computer (like the lab machines).</p>
+
+<!-- Disconnect the HDMI cable and plug it back into the lab machine.  -->
+
+<ol>
+  <li>
+    <p>Make sure you are able to find your Pi Z2W by opening up the <strong>terminal</strong> on your lab machine. This can be done either through finding it in the <strong>Activities</strong> menu or simply pressing <code class="language-plaintext highlighter-rouge">Ctrl+Alt+T</code>. Once the terminal has opened, search for it by entering the command:</p>
+
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> ping doorbell-&lt;your_netid&gt;.local
+</code></pre></div>    </div>
+
+    <p>If you receive a message like the following:</p>
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> ping: doorbell-kitras.local: Name or service not known
+</code></pre></div>    </div>
+    <p>then the Pi Z2W is not connected to the lab network. Check the ethernet cable and make sure that everything is plugged in correctly then try again.</p>
+
+    <p>If you receive messages like:</p>
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> PING doorbell-kitras.local (192.168.86.48) 56(84) bytes of data.
+ 64 bytes from doorbell-kitras.lan (192.168.86.48): icmp_seq=1 ttl=64 time=95.7 ms
+ 64 bytes from doorbell-kitras.lan (192.168.86.48): icmp_seq=2 ttl=64 time=5.47 ms
+ 64 bytes from doorbell-kitras.lan (192.168.86.48): icmp_seq=3 ttl=64 time=25.0 ms
+ 64 bytes from doorbell-kitras.lan (192.168.86.48): icmp_seq=4 ttl=64 time=21.6 ms
+ 64 bytes from doorbell-kitras.lan (192.168.86.48): icmp_seq=5 ttl=64 time=6.53 ms
+</code></pre></div>    </div>
+    <p>press <code class="language-plaintext highlighter-rouge">Ctrl+C</code> to stop the command. This means your lab machine can see the Pi Z2W and you are able to login with <code class="language-plaintext highlighter-rouge">ssh</code>.</p>
+  </li>
+  <li>Login to the Pi Z2W via <code class="language-plaintext highlighter-rouge">ssh</code> by typing in:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> ssh &lt;your_username&gt;@doorbell-&lt;your_netid&gt;.local
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>A prompt will appear asking if you want to add the Pi Z2W to a list of trusted remote computers. Type in <code class="language-plaintext highlighter-rouge">yes</code> to add the Pi Z2W to the trusted list.</p>
+  </li>
+  <li>
+    <p>After entering in your login credentials, you should receive a prompt like the following to show that you are inside of the Pi Z2W:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/ssh.png" alt="ssh">
+ </figure>
+
+    <p>You can tell you are inside the Pi Z2W by looking at the string before the cursor. It should be <code class="language-plaintext highlighter-rouge">username@computer_name</code> or specifically <code class="language-plaintext highlighter-rouge">&lt;your_username&gt;@doorbell-&lt;your_netid&gt;</code> on the Pi Z2W.</p>
+  </li>
+</ol>
+
+<h3 id="increasing-swap-file-size">Increasing Swap File Size</h3>
+<p>With a remote connection to the Pi Z2W, we can now finish our development environment setup. First let’s give the Pi Z2W some more available RAM by increasing the size of its <a href="https://itsfoss.com/create-swap-file-linux/" target="_blank" rel="noopener noreferrer">swap file</a>. Doing this will give the Pi Z2W more system resources if it ever uses up all of its onboard RAM.</p>
+
+<ol>
+  <li>We can check to see how much RAM the Pi Z2W has available by typing in
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> htop
+</code></pre></div>    </div>
+    <p>A window like the following should take control of the terminal</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/htop.png" alt="htop">
+ </figure>
+
+    <p>Note that there are several meters at the top of the screen with <code class="language-plaintext highlighter-rouge">Mem</code> and <code class="language-plaintext highlighter-rouge">Swp</code> being the bottom two. <code class="language-plaintext highlighter-rouge">Mem</code> indicates how much RAM is being used up on the Pi Z2W. Notice that at the right of the meter there is a ratio out of <code class="language-plaintext highlighter-rouge">419M</code>. This means that the Pi Z2W has ~500MB (or half a gigabyte) of RAM. The <code class="language-plaintext highlighter-rouge">Swp</code> field indicates how much storage space is set aside to act as an emergency backup incase all the the RAM is used. This swap memory is significantly slower than the onboard RAM and should not be thought of as interchangable with RAM. However looking at the figure we notice that we only have 100MB dedicated to this file. For our purposes we want 1024MB (or 1GB).</p>
+
+    <p>To exit this mode, type in <code class="language-plaintext highlighter-rouge">q</code>.</p>
+  </li>
+  <li>We’ll start by disabling the current swap configuration with
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>dphys-swapfile swapoff
+</code></pre></div>    </div>
+
+    <p>You may notice that when you start typing your password to execute this command that the cursor does not move and that no characters appear. This is the terminal’s way of protecting you from any people peeping over your shoulder and trying to steal your password. Rest assured that even though nothing is moving or showing, you are still entering in your password.</p>
+  </li>
+  <li>Next we edit the configuration file of the OS that controls swap behavior with
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>nano /etc/dphys-swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>You will now notice that instead of being in command execution mode, your terminal has opened up a text editor. You can navigate through the file using the arrow keys. Find the line that says
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> CONF_SWAPSIZE=100
+</code></pre></div>    </div>
+    <p>and change the <code class="language-plaintext highlighter-rouge">100</code> to <code class="language-plaintext highlighter-rouge">1024</code>.</p>
+  </li>
+  <li>To save the changes and exit, press <code class="language-plaintext highlighter-rouge">Ctrl+X</code>. A prompt will ask if you want to save the changes to the file; press <code class="language-plaintext highlighter-rouge">Y</code> to accept the changes and then hit <code class="language-plaintext highlighter-rouge">Enter</code>. We now apply the changes made to the swap configuration file by
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>dphys-swapfile setup
+</code></pre></div>    </div>
+    <p>and enable the swapfile with</p>
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>dphys-swapfile swapon
+</code></pre></div>    </div>
+  </li>
+  <li>For these changes to take effect, you will need to reboot your Pi Z2W. This is done with
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>reboot
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You will notice that your <code class="language-plaintext highlighter-rouge">ssh</code> program will close and that your Pi Z2W reboots. <strong>Wait for a minute or two and then log back into the Pi Z2W with <code class="language-plaintext highlighter-rouge">ssh</code></strong>. If you find that you are having issues loggin back into the Pi Z2W, <strong>unplug the ethernet cable from the PoE adapter, wait 1 minute, then plug it back in and try again</strong>.</p>
+  </li>
+  <li>
+    <p>Check the system memory configuration again with <code class="language-plaintext highlighter-rouge">htop</code>. You should notice a change in the <code class="language-plaintext highlighter-rouge">Swp</code> field as reflected below:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/htop2.png" alt="htop2">
+ </figure>
+
+    <p>Press <code class="language-plaintext highlighter-rouge">q</code> to exit.</p>
+  </li>
+</ol>
+
+<h3 id="connect-with-vscode">Connect with VSCode</h3>
+<p>The last we’ll do in this lab to setup the Pi Z2W is to ensure that we can connect to it using the <strong>Remote - SSH</strong> extension in VSCode.</p>
+
+<ol>
+  <li>
+    <p>Open VSCode through the <strong>Activities</strong> menu on your lab machine. Look at the bottom status bar of the window. There should be an icon at the bottom left side of the screen:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/vscode-icon.png" alt="vscode-icon">
+ </figure>
+  </li>
+  <li>
+    <p>If this icon is not there, that means the <strong>Remote - SSH</strong> extension is not installed. To install it, click on the extensions <img src="/ecen224/assets/getting-started/vscode-extensions.png" alt="extensions" width="4%"> icon on the leftmost toolbar. This will open up the <strong>Extensions Manager</strong> where you can search for any type of tool you wish to add to your VSCode editor.</p>
+  </li>
+  <li>
+    <p>Type in <code class="language-plaintext highlighter-rouge">Remote - SSH</code> into the searchbar and click the <strong>Install</strong> button on the entry that says <strong>Microsoft</strong>  underneath.</p>
+  </li>
+  <li>
+    <p>Once the extension has successfully installed, you can now click on the green icon in the bottom left corner as seen in the figure above.</p>
+  </li>
+  <li>
+    <p>Click on this icon then select <strong>Connect to Host &gt; Add New SSH Host</strong>. In this input box we will put the <code class="language-plaintext highlighter-rouge">ssh</code> command we used before to connect to the Pi Z2W through the terminal: <code class="language-plaintext highlighter-rouge">ssh &lt;your_username&gt;@doorbell-&lt;your_netid&gt;.local</code>.</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/vs-ssh.png" alt="vs-ssh">
+ </figure>
+  </li>
+  <li>
+    <p>Then save this entry to your local <code class="language-plaintext highlighter-rouge">ssh</code> configuration file on our lab machine:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/ssh-conf.png" alt="ssh-conf">
+ </figure>
+  </li>
+  <li>
+    <p>Click on the Remote SSH icon in the bottom left corner again and this time select the new <code class="language-plaintext highlighter-rouge">ssh</code> entry you just made by clicking <strong>Connect to Host &gt; doorbell-&lt;your_netid&gt;.local</strong>.</p>
+  </li>
+  <li>
+    <p>A new window will pop up and prompt you to enter in your Pi Z2W password. Enter in your password. You can now browse through files and code on your Pi Z2W from VSCode on your lab machine.</p>
+  </li>
+  <li>
+    <p>In the left toolbar on the window, click on files <img src="/ecen224/assets/getting-started/files.png" alt="extensions" width="4%"> icon.</p>
+  </li>
+  <li>
+    <p>Click on the <strong>Open Folder</strong> button and then click <strong>OK</strong> on the pop-up. This should put you into your home folder on Raspberry Pi OS.</p>
+    <figure class="image mx-auto" style="max-width: 750px">
+  <img src="/ecen224/assets/getting-started/open-folder.png" alt="open-folder">
+</figure>
+
+    <p>Now you can use the left pane of VS Code to view and edit files inside the home directory on the Pi Z2W.</p>
+  </li>
+</ol>
+
+<h3 id="create-ssh-key-for-github">Create SSH key for GitHub</h3>
+<p>All of the labs require you to write code and upload it to a version control service called GitHub. A GitHub account is required for this class. If you do not have an account you can create one <a href="http://github.com/join" target="_blank" rel="noopener noreferrer">here</a> otherwise you are allowed to use your personal account for this class.</p>
+
+<p>In order to allow our Pi Z2W to speak with GitHub, we will need to create an <strong>SSH key</strong> that will allow GitHub to know that the changes to the code online came from a trusted source (i.e. your Pi Z2W) and not from some impostor’s device (i.e. your arch-nemesis’s Pi Z2W).</p>
+
+<ol>
+  <li>
+    <p>To generate an SSH key, use the terminal that is connected to your Pi Z2W and type in:</p>
+
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> ssh-keygen <span class="nt">-t</span> ed25519 <span class="nt">-C</span> <span class="s2">"&lt;your_email_address"</span>
+</code></pre></div>    </div>
+
+    <p>The tool will ask you several questions. For our purposes, the default values will suffice (i.e. just hit <code class="language-plaintext highlighter-rouge">Enter</code>) unless you desire to protect your key with a password. This will just require you to enter in a password any time you want to use the SSH key.</p>
+  </li>
+  <li>Once this is done you can find the contents of your new SSH keys by typing in
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">cat</span> ~/.ssh/id_ed25519.pub
+</code></pre></div>    </div>
+    <p><strong>NOTE:</strong> Make sure that you <code class="language-plaintext highlighter-rouge">cat</code> the values of <code class="language-plaintext highlighter-rouge">id_ed25519.pub</code> and <strong>NOT</strong> <code class="language-plaintext highlighter-rouge">id_ed25519</code>. The contents in the <code class="language-plaintext highlighter-rouge">.pub</code> are meant to be shared with the <code class="language-plaintext highlighter-rouge">pub</code>lic and the contents of the other file are not meant to be shared with anyone else.</p>
+  </li>
+  <li>
+    <p>Copy the output of this file by selecting it and pressing <code class="language-plaintext highlighter-rouge">Ctrl-Shift-C</code>. Then navigate in a web browser to your GitHub <a href="https://github.com/settings/keys" target="_blank" rel="noopener noreferrer">keys console</a> (you must be signed into GitHub for this step to work).</p>
+  </li>
+  <li>
+    <p>At the top of the page will be a big green button that says <strong>New SSH key</strong>. Click on this and then you should be taken to page like the one below:</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/github-ssh-key.png" alt="github-ssh-key">
+ </figure>
+  </li>
+  <li>
+    <p>Paste the contents that we copied into the <strong>Key</strong> box and feel free to add whatever value you desire into the <strong>Title</strong>. Make sure the dropdown menu for <strong>Key type</strong> is set to <code class="language-plaintext highlighter-rouge">Authentication Key</code>.</p>
+  </li>
+  <li>Finally, click <strong>Add SSH key</strong> and now your Pi Z2W should be able to talk to your GitHub account.</li>
+</ol>
+
+<h3 id="setup-github-repository">Setup GitHub Repository</h3>
+<p>Next, we need to ensure that <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">git</code></a> is installed on our Pi Z2W. This will be the terminal program that we use to communicate with GitHub to version control and submit our assignments.</p>
+
+<ol>
+  <li>
+    <p>If the terminal window on VSCode is not already open, press <code class="language-plaintext highlighter-rouge">Ctrl+`</code> and then enter in the command:</p>
+
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>apt <span class="nb">install </span>git
+</code></pre></div>    </div>
+
+    <p>Once <code class="language-plaintext highlighter-rouge">git</code> has installed, we use this to download the first the repository (or code-base) for this lab. Since this lab requires no code to be written, the repository will be pretty uneventful. But remember these steps as future labs will use these steps to be set up.</p>
+  </li>
+  <li>
+    <p>Click on the <strong>GitHub Classroom Link</strong> located at the top of the <code class="language-plaintext highlighter-rouge">#lab-1</code> channel in Slack. You will be taken to a page that asks you to accept the assignment. Accept it and then you will be transferred to a page with a link of your repository for this assignment. Click on that link and you should be brought to the default view of the repository.</p>
+  </li>
+  <li>
+    <p>Click on the green button that says <strong>Code</strong>. Make sure you are on the <strong>SSH</strong> tab as shown below and copy the text in the box beneath.</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/ssh-repo.png" alt="ssh-repo">
+ </figure>
+  </li>
+  <li>
+    <p>Back on the Pi Z2W’s terminal type in</p>
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> git clone &lt;GitHub Repo SSH URL&gt;
+</code></pre></div>    </div>
+
+    <p>This downloads a copy of the lab files from to your Pi Z2W. Since this lab is focused on setting up the Pi Z2W, there are no special files that you will need to interact with other than the <code class="language-plaintext highlighter-rouge">README.md</code> for your lab submission.</p>
+
+    <figure class="image mx-auto" style="max-width: 750px">
+   <img src="/ecen224/assets/getting-started/dl-repo.png" alt="dl-repo">
+ </figure>
+  </li>
+</ol>
+
+<p>In future labs, any starter code or special resources for completing that lab will be included alongside that lab’s <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+
+<h2 id="lab-submission">Lab Submission</h2>
+<ul>
+  <li>
+    <p>Answer the questions in the <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+  </li>
+  <li>
+    <p>To successfully submit your lab, you will need to follow the instructions in the <a href="/ecen224/lab-setup">Lab Setup</a> page, especially the <strong>Commiting and Pushing Files</strong> and <strong>Tagging Submissions</strong> section.</p>
+  </li>
+</ul>
+
+<h2 id="explore-more">Explore More!</h2>
+<ul>
+  <li><a href="https://kitras.io/linux/shells/" target="_blank" rel="noopener noreferrer">Learn more about the terminal</a></li>
+  <li><a href="https://www.geeksforgeeks.org/how-to-customize-linux-terminal-using-powerline10k/" target="_blank" rel="noopener noreferrer">Customize the terminal</a></li>
+  <li><a href="https://dev.to/risafj/ssh-key-authentication-for-absolute-beginners-in-plain-english-2m3f" target="_blank" rel="noopener noreferrer">Ditch passwords for keys</a></li>
+</ul>
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/ecen224/js/jquery.visible.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

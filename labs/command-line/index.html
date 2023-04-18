@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Command Line • ECEn 224: Intro to Computer Systems
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/ecen224/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+
+<link rel="icon" type="image/png" sizes="96x96" href=/ecen224/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/ecen224/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/ecen224/icon/favicon-16x16.png>
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+<div class="border-right" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/ecen224/"><img src="/ecen224/icon/icon.svg">
+                ECEn 224</a>
+        </div>
+
+        <div class="list-group list-group-flush">
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/overview/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-chalkboard-teacher"></i>
+                
+                Overview
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/resources/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-book"></i>
+                
+                Resources
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/coding-standard/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-terminal"></i>
+                
+                Coding Standard
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="/ecen224/lab-setup/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-wrench"></i>
+                
+                Lab Setup
+            </a>
+            
+            
+            <!-- Look for specific front-matter tag -->
+            
+            <a href="https://learningsuite.byu.edu/.N7cA/cid-qWPtDGbD9Vq6/calendar" class="list-group-item list-group-item-action sidebar-item" target="_blank" rel="noopener noreferrer">
+                
+                <i class="fa-duotone fa-calendar"></i>
+                
+                Schedule
+            </a>
+            
+            
+        </div>
+
+        <div class="sidebar-heading">Labs</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/labs/getting-started/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">1</span>
+                Getting Started
+            </a>
+            
+            <a href="/ecen224/labs/command-line/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">2</span>
+                Command Line
+            </a>
+            
+            <a href="/ecen224/labs/data/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">3</span>
+                Data
+            </a>
+            
+            <a href="/ecen224/labs/image/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">4</span>
+                Image
+            </a>
+            
+            <a href="/ecen224/labs/debugging/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">5</span>
+                Debugging
+            </a>
+            
+            <a href="/ecen224/labs/display/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">6</span>
+                Display
+            </a>
+            
+            <a href="/ecen224/labs/io/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">7</span>
+                I/O
+            </a>
+            
+            <a href="/ecen224/labs/camera/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">8</span>
+                Camera
+            </a>
+            
+            <a href="/ecen224/labs/client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">9</span>
+                Client
+            </a>
+            
+            <a href="/ecen224/labs/threaded-client/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">10</span>
+                Threaded Client
+            </a>
+            
+            <a href="/ecen224/labs/doorbell/" class="list-group-item list-group-item-action sidebar-item">
+                <span class="badge badge-pill badge-dark-grey">11</span>
+                Doorbell
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Programming Assignments</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/programming-assignments/bomb-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bomb"></i>
+                
+                Bomb Lab
+            </a>
+            
+            <a href="/ecen224/programming-assignments/attack-lab/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-bow-arrow"></i>
+                
+                Attack Lab
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Homeworks</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/ecen224/homework/data/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-binary"></i>
+                
+                Data
+            </a>
+            
+            <a href="/ecen224/homework/c/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-brackets-curly"></i>
+                
+                C
+            </a>
+            
+            <a href="/ecen224/homework/assembly/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-microchip"></i>
+                
+                Assembly
+            </a>
+            
+            <a href="/ecen224/homework/memory/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-memory"></i>
+                
+                Memory
+            </a>
+            
+            <a href="/ecen224/homework/io/" class="list-group-item list-group-item-action sidebar-item">
+                
+                <i class="fa-duotone fa-server"></i>
+                
+                I/O
+            </a>
+            
+        </div>
+    </div>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+    <button class="btn btn-brand" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <a href="#" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+    
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer" href="https://github.com/byu-cpe/ecen224/issues/new?title=Suggestions+for+Command%20Line+Page"><i class="fab fa-github"></i> Suggest
+                Edits</a>
+        </li>
+    </ul>
+    
+</nav>
+
+
+      <div class="container">
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Command Line
+    </h1>
+
+    <div class="page-content">
+        
+        <div class="lab-toc col-md-6 col-lg-5">
+            <h4>Table of Contents</h4>
+            <ul>
+  <li><a href="#github-classroom">GitHub Classroom</a></li>
+  <li><a href="#objectives">Objectives</a></li>
+  <li>
+<a href="#overview">Overview</a>
+    <ul>
+      <li><a href="#explore-common-linux-commands">Explore Common Linux Commands</a></li>
+      <li><a href="#install-zsh">Install ZSH</a></li>
+      <li>
+<a href="#keyboard-shortcuts">Keyboard Shortcuts</a>
+        <ul>
+          <li><a href="#command-history">Command History</a></li>
+          <li><a href="#command-editing">Command Editing</a></li>
+          <li><a href="#command-completion">Command Completion</a></li>
+        </ul>
+      </li>
+      <li><a href="#set-and-read-environment-variables">Set and Read Environment Variables</a></li>
+      <li><a href="#get-familiar-with-a-text-editor">Get Familiar with a Text Editor</a></li>
+      <li><a href="#setup-shell-configuration-files">Setup Shell Configuration Files</a></li>
+      <li><a href="#shell-challenge">Shell Challenge</a></li>
+    </ul>
+  </li>
+  <li><a href="#lab-submission">Lab Submission</a></li>
+  <li><a href="#explore-more">Explore More!</a></li>
+</ul>
+
+        </div>
+        
+
+        <h2 id="github-classroom">GitHub Classroom</h2>
+<p>Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment. Make sure to clone the repository</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ul>
+  <li>Become familiar with the Linux environment, commands, and some applications.</li>
+  <li>Be able to navigate a directory tree from the command line.</li>
+  <li>Use a text editor to create and edit text files.</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>In this lab you will learn some basic Linux features and skills that are useful throughout a technical career. The Linux environment is used commonly in the engineering, scientific and research communities. One of the reasons for this stems from the openness of Linux and the many applications that run on it. The source code to most everything that runs on Linux, and the <a href="http://www.kernel.org/" target="_blank" rel="noopener noreferrer">kernel</a> itself, is available on the Web. If you don’t like something or want to improve it, nothing is stopping you from getting the source code and changing it. You are encouraged to learn and explore beyond what is presented here on your own. We can only touch on a few Linux features. Discovering the flexibility that is available to the creative mind is left to you.</p>
+
+<h3 id="explore-common-linux-commands">Explore Common Linux Commands</h3>
+<p>Work through Modules 1, 2, and 4 of the <a href="http://linuxsurvival.com/" target="_blank" rel="noopener noreferrer">Linux Survival tutorial</a>. It has a simulated Linux terminal for practicing what you learn in the modules.</p>
+
+<p>For a brief list of commonly used commands, see the <a href="/ecen224/resources#linux_commands_summary/">Linux Command Summary</a>.</p>
+
+<h3 id="install-zsh">Install ZSH</h3>
+<p>Inside of every terminal is the program that runs and executes the commands typed inside of it. This is known as the <strong>shell</strong>. Most Linux operating have the <code class="language-plaintext highlighter-rouge">bash</code> shell running by default. For this class we will be using the <code class="language-plaintext highlighter-rouge">zsh</code> shell due to its more advanced and modern features. To install this, SSH into your Pi Z2W. Then execute the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>zsh    <span class="c"># This installs the zsh program</span>
+chsh <span class="nt">-s</span> /bin/zsh        <span class="c"># This will change your default shell to zsh</span>
+</code></pre></div></div>
+
+<p>Once this finishes installing, close the ssh session by typing in</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">exit</span>
+</code></pre></div></div>
+<p>and then enter back into the Pi Z2W through SSH. You will be greeted with a setup screen like the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is the Z Shell configuration function for new users,
+zsh-newuser-install.
+You are seeing this message because you have no zsh startup files
+(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
+~).  This function can help you with a few settings that should
+make your use of the shell easier.
+
+You can:
+
+(q)  Quit and do nothing.  The function will be run again next time.
+
+(0)  Exit, creating the file ~/.zshrc containing just a comment.
+     That will prevent this function being run again.
+
+(1)  Continue to the main menu.
+
+(2)  Populate your ~/.zshrc with the configuration recommended
+     by the system administrator and exit (you will need to edit
+     the file by hand, if so desired).
+
+--- Type one of the keys in parentheses --- 
+
+</code></pre></div></div>
+
+<p>Quit this menu by pressing <code class="language-plaintext highlighter-rouge">q</code>. This allows us to create our own configuration file. This is done by running</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano .zshrc
+</code></pre></div></div>
+
+<p>This creates a new file named <code class="language-plaintext highlighter-rouge">.zshrc</code> that is empty. Copy and paste the following into the text editor and then save and close the file:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Set up the prompt</span>
+
+autoload <span class="nt">-Uz</span> promptinit
+promptinit
+prompt adam1
+
+setopt histignorealldups sharehistory
+
+<span class="c"># Use emacs keybindings even if our EDITOR is set to vi</span>
+bindkey <span class="nt">-e</span>
+
+<span class="c"># Keep 1000 lines of history within the shell and save it to ~/.zsh_history:</span>
+<span class="nv">HISTSIZE</span><span class="o">=</span>1000
+<span class="nv">SAVEHIST</span><span class="o">=</span>1000
+<span class="nv">HISTFILE</span><span class="o">=</span>~/.zsh_history
+
+<span class="c"># Use modern completion system</span>
+autoload <span class="nt">-Uz</span> compinit
+compinit
+
+zstyle <span class="s1">':completion:*'</span> auto-description <span class="s1">'specify: %d'</span>
+zstyle <span class="s1">':completion:*'</span> completer _expand _complete _correct _approximate
+zstyle <span class="s1">':completion:*'</span> format <span class="s1">'Completing %d'</span>
+zstyle <span class="s1">':completion:*'</span> group-name <span class="s1">''</span>
+zstyle <span class="s1">':completion:*'</span> menu <span class="k">select</span><span class="o">=</span>2
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">dircolors</span> <span class="nt">-b</span><span class="si">)</span><span class="s2">"</span>
+zstyle <span class="s1">':completion:*:default'</span> list-colors <span class="k">${</span><span class="p">(s.</span>:.<span class="p">)LS_COLORS</span><span class="k">}</span>
+zstyle <span class="s1">':completion:*'</span> list-colors <span class="s1">''</span>
+zstyle <span class="s1">':completion:*'</span> list-prompt %SAt %p: Hit TAB <span class="k">for </span>more, or the character to insert%s
+zstyle <span class="s1">':completion:*'</span> matcher-list <span class="s1">''</span> <span class="s1">'m:{a-z}={A-Z}'</span> <span class="s1">'m:{a-zA-Z}={A-Za-z}'</span> <span class="s1">'r:|[._-]=* r:|=* l:|=*'</span>
+zstyle <span class="s1">':completion:*'</span> menu <span class="k">select</span><span class="o">=</span>long
+zstyle <span class="s1">':completion:*'</span> <span class="k">select</span><span class="nt">-prompt</span> %SScrolling active: current selection at %p%s
+zstyle <span class="s1">':completion:*'</span> use-compctl <span class="nb">false
+</span>zstyle <span class="s1">':completion:*'</span> verbose <span class="nb">true
+
+</span>zstyle <span class="s1">':completion:*:*:kill:*:processes'</span> list-colors <span class="s1">'=(#b) #([0-9]#)*=0=01;31'</span>
+zstyle <span class="s1">':completion:*:kill:*'</span> <span class="nb">command</span> <span class="s1">'ps -u $USER -o pid,%cpu,tty,cputime,cmd'</span>
+
+<span class="c"># ~/.bashrc: executed by bash(1) for non-login shells.</span>
+<span class="c"># see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)</span>
+<span class="c"># for examples</span>
+
+<span class="c"># If not running interactively, don't do anything</span>
+<span class="k">case</span> <span class="nv">$-</span> <span class="k">in</span>
+    <span class="k">*</span>i<span class="k">*</span><span class="p">)</span> <span class="p">;;</span>
+      <span class="k">*</span><span class="p">)</span> <span class="k">return</span><span class="p">;;</span>
+<span class="k">esac</span>
+
+<span class="c"># don't put duplicate lines or lines starting with space in the history.</span>
+<span class="c"># See bash(1) for more options</span>
+<span class="nv">HISTCONTROL</span><span class="o">=</span>ignoreboth
+
+<span class="c"># If set, the pattern "**" used in a pathname expansion context will</span>
+<span class="c"># match all files and zero or more directories and subdirectories.</span>
+<span class="c">#shopt -s globstar</span>
+
+<span class="c"># make less more friendly for non-text input files, see lesspipe(1)</span>
+<span class="c">#[ -x /usr/bin/lesspipe ] &amp;&amp; eval "$(SHELL=/bin/sh lesspipe)"</span>
+
+<span class="c"># set a fancy prompt (non-color, unless we know we "want" color)</span>
+<span class="k">case</span> <span class="s2">"</span><span class="nv">$TERM</span><span class="s2">"</span> <span class="k">in
+    </span>xterm-color|<span class="k">*</span><span class="nt">-256color</span><span class="p">)</span> <span class="nv">color_prompt</span><span class="o">=</span><span class="nb">yes</span><span class="p">;;</span>
+<span class="k">esac</span>
+
+<span class="c"># uncomment for a colored prompt, if the terminal has the capability; turned</span>
+<span class="c"># off by default to not distract the user: the focus in a terminal window</span>
+<span class="c"># should be on the output of commands, not on the prompt</span>
+<span class="nv">force_color_prompt</span><span class="o">=</span><span class="nb">yes
+
+</span><span class="k">if</span> <span class="o">[</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$force_color_prompt</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+    if</span> <span class="o">[</span> <span class="nt">-x</span> /usr/bin/tput <span class="o">]</span> <span class="o">&amp;&amp;</span> tput setaf 1 <span class="o">&gt;</span>&amp;/dev/null<span class="p">;</span> <span class="k">then</span>
+	<span class="c"># We have color support; assume it's compliant with Ecma-48</span>
+	<span class="c"># (ISO/IEC-6429). (Lack of such support is extremely rare, and such</span>
+	<span class="c"># a case would tend to support setf rather than setaf.)</span>
+	<span class="nv">color_prompt</span><span class="o">=</span><span class="nb">yes
+    </span><span class="k">else
+	</span><span class="nv">color_prompt</span><span class="o">=</span>
+    <span class="k">fi
+fi
+
+</span><span class="nb">unset </span>color_prompt force_color_prompt
+
+<span class="c"># enable color support of ls and also add handy aliases</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nt">-x</span> /usr/bin/dircolors <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span><span class="nb">test</span> <span class="nt">-r</span> ~/.dircolors <span class="o">&amp;&amp;</span> <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">dircolors</span> <span class="nt">-b</span> ~/.dircolors<span class="si">)</span><span class="s2">"</span> <span class="o">||</span> <span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">dircolors</span> <span class="nt">-b</span><span class="si">)</span><span class="s2">"</span>
+    <span class="nb">alias ls</span><span class="o">=</span><span class="s1">'ls --color=auto'</span>
+    <span class="c">#alias dir='dir --color=auto'</span>
+    <span class="c">#alias vdir='vdir --color=auto'</span>
+
+    <span class="nb">alias grep</span><span class="o">=</span><span class="s1">'grep --color=auto'</span>
+    <span class="nb">alias </span><span class="nv">fgrep</span><span class="o">=</span><span class="s1">'fgrep --color=auto'</span>
+    <span class="nb">alias </span><span class="nv">egrep</span><span class="o">=</span><span class="s1">'egrep --color=auto'</span>
+<span class="k">fi</span>
+
+<span class="c"># colored GCC warnings and errors</span>
+<span class="c">#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'</span>
+
+<span class="c"># some more ls aliases</span>
+<span class="nb">alias </span><span class="nv">ll</span><span class="o">=</span><span class="s1">'ls -l'</span>
+<span class="nb">alias </span><span class="nv">la</span><span class="o">=</span><span class="s1">'ls -A'</span>
+<span class="nb">alias </span><span class="nv">l</span><span class="o">=</span><span class="s1">'ls -CF'</span>
+
+</code></pre></div></div>
+
+<p>Once you have done this, you can apply these configurations to your current terminal session by running</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> .zshrc
+</code></pre></div></div>
+
+<p>Your terminal prompt (or text before every command) should now look something like the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@doorbell-netid%
+</code></pre></div></div>
+
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+<p>Even though using the command line to do things in Linux may seem like a lot of typing, there are shortcuts in place that can tremendously reduce the number of keystrokes. With a little practice, the shortcuts become a natural part of doing work on the command line and can even be more efficient than pointing, clicking, and navigating menus in a graphical interface. With a graphical interface, a user will often need to move their hand back and forth between the keyboard and the mouse. This motion is inefficient, even though most of us get used to it. With command line operation, our fingers never need to leave the keyboard and reach for the mouse.</p>
+
+<h4 id="command-history">Command History</h4>
+<p>When you type a command on the keyboard, there is a good chance you will want to execute it again, exactly the same way, or with a small variation. Using the up and down arrows on the keyboard allows you to navigate through a history of commands you have typed on the command line. When you hit the up arrow key the first time, the last command you executed will appear on the command line. If you hit up arrow again, you will see the next to the last and so forth. Typing down arrow will show more recent commands. After you have selected a previous command with the arrow keys, hitting the <code class="language-plaintext highlighter-rouge">Enter</code> key will execute the command.</p>
+
+<h4 id="command-editing">Command Editing</h4>
+<p>Once you have selected a prior command with the up and down arrow keys, you may want to slightly change it before you execute it again. The left and right arrow keys allow you to move the cursor to a location where you want to change the command. Use the backspace key to remove characters and then type new text at that location. When satisfied with the modified command, hit <code class="language-plaintext highlighter-rouge">Enter</code> to execute it. This is useful, for example, when you want to execute the same command on a different filename. Just hit up arrow to get the previous command, then backspace over the old file name and type the new one.</p>
+
+<h4 id="command-completion">Command Completion</h4>
+<p>Another helpful shortcut is called command or tab completion. If the tab key is pressed while a partial command or file name is typed, the shell will complete the rest of the text based on what has already been typed. Open a terminal window to your home directory (you can do this by typing <code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">Alt</code>+<code class="language-plaintext highlighter-rouge">T</code>) and type the following and then hit <code class="language-plaintext highlighter-rouge">Tab</code>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> /d
+</code></pre></div></div>
+<p>After hitting <code class="language-plaintext highlighter-rouge">Tab</code> you should see that “/d” was extended to “/dev/”. Now type <code class="language-plaintext highlighter-rouge">Enter</code> to execute the command. When navigating deep directory hierarchies, tab completion can assist in typing what could otherwise be very long path names. For example, tab can be pressed multiple times to keep extending the path name after typing a few characters, enough to make the name unique.</p>
+
+<p>Command names can also be tab completed. In a terminal window, type the following and then hit <code class="language-plaintext highlighter-rouge">Tab</code>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkd
+</code></pre></div></div>
+<p>Pressing the tab key should complete the command to mkdir. Press <code class="language-plaintext highlighter-rouge">Enter</code> to start the web browser. If you press <code class="language-plaintext highlighter-rouge">Tab</code> and you don’t get a response, you have mistyped the leading characters or there are other options that are ambiguous. Typing <code class="language-plaintext highlighter-rouge">Tab</code> again a second time will list the remaining options that begin with the characters you have typed. For example type in</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mk
+</code></pre></div></div>
+<p>Now hit <code class="language-plaintext highlighter-rouge">Tab</code> a couple of times and you should see something like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir        mk_modmap    mksh         mktemp       mkvinfo      mkvpropedit  
+mkfifo       mknod        mksh-static  mkvextract   mkvmerge
+</code></pre></div></div>
+<p>You can <code class="language-plaintext highlighter-rouge">Tab</code> through the possible commands and hit <code class="language-plaintext highlighter-rouge">Enter</code> to select the highlighted command.</p>
+
+<h3 id="set-and-read-environment-variables">Set and Read Environment Variables</h3>
+<p>The Linux environment holds configuration variables used by application programs. These variables are set in the environment by a user or by the system as needed. Knowing how to set environment variables and view them is important, since some Linux application programs may depend on you setting these up properly before running them. For example, the shell inside your terminal uses environment variables to indicate the location of where all the commands are stored. Now let’s see how to set an environment variable. The following example will set the variable MYLAB to a value of 02.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">MYLAB</span><span class="o">=</span>02
+</code></pre></div></div>
+<p>After typing the command in the terminal, you can view the value that was last set by typing:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nv">$MYLAB</span>
+</code></pre></div></div>
+<p>You can also see your variable among all the others by typing:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env</span>
+</code></pre></div></div>
+
+<h3 id="get-familiar-with-a-text-editor">Get Familiar with a Text Editor</h3>
+<p>Several text editors are installed on your system, for example, <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">gedit</code>, <code class="language-plaintext highlighter-rouge">nano</code>, and <code class="language-plaintext highlighter-rouge">vim</code>. Some applications can only be run from the command line, while others can be launched graphically by clicking on its icon in the application screen. Choose an editor, and use it to create a new file. (Hint: If you are doing this lab SSHed into your Pi Z2W, <code class="language-plaintext highlighter-rouge">code</code> and <code class="language-plaintext highlighter-rouge">gedit</code> will not work.)</p>
+
+<p>Open a new file in the cloned lab directory and create a note to yourself.
+Experiment with deleting text, copying, and pasting.
+Save the file.
+Open a terminal window and type <code class="language-plaintext highlighter-rouge">ls -l</code> to see details about the text file you created.</p>
+
+<h3 id="setup-shell-configuration-files">Setup Shell Configuration Files</h3>
+<p>If the default configuration of your command line environment is not what you would prefer, you can change it to your liking. Let’s go through how to customize your environment.</p>
+
+<p>When you first open a terminal window, if your home directory contains a file named <code class="language-plaintext highlighter-rouge">.zshrc</code>, the command shell (<code class="language-plaintext highlighter-rouge">zsh</code>) will read and execute commands from that file before giving you the command prompt.</p>
+
+<p>Since the file names begin with a dot <code class="language-plaintext highlighter-rouge">.</code>, they are hidden from the ls command unless you use the <code class="language-plaintext highlighter-rouge">-a</code> option (e.g. <code class="language-plaintext highlighter-rouge">ls -a</code>).</p>
+
+<p>Use your text editor of choice to view these files and make any changes according to your preferences. For example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano .zshrc
+</code></pre></div></div>
+<p>If you are not familiar with a command and want to know what it does, type <code class="language-plaintext highlighter-rouge">man</code> and the name of the command to see a help manual for that command. You can open another terminal window at the same time to type the <code class="language-plaintext highlighter-rouge">man</code> command and see the helpful text. Many of the commands used in <code class="language-plaintext highlighter-rouge">.zshrc</code>, like <code class="language-plaintext highlighter-rouge">alias</code>, are built into zsh. For these, type <code class="language-plaintext highlighter-rouge">man zsh</code> to get help. If you type <code class="language-plaintext highlighter-rouge">man &lt;command&gt;</code> and the response is <code class="language-plaintext highlighter-rouge">No manual entry for &lt;command&gt;</code>, it is likely built into zsh. Online help is also available for <a href="https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html" target="_blank" rel="noopener noreferrer">shell built-in commands</a> and other <a href="https://www.gnu.org/software/coreutils/manual/html_node/index.html" target="_blank" rel="noopener noreferrer">core commands</a>.</p>
+
+<p>One of the preferences set in the example .zshrc file you copied over is to define an alias for typing <code class="language-plaintext highlighter-rouge">ll</code> at the command line. When the alias is defined, typing <code class="language-plaintext highlighter-rouge">ll</code> will actually execute <code class="language-plaintext highlighter-rouge">ls -alF</code> with the long listing option. To customize this for pass-off, remove the <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">F</code> options so that the line reads <code class="language-plaintext highlighter-rouge">alias ll='ls -l'</code>. Lines beginning with a <code class="language-plaintext highlighter-rouge">#</code> in shell scripts are comments and are not executed.</p>
+
+<p>Save any changes you have made to <code class="language-plaintext highlighter-rouge">.zshrc</code>. Test that your preferences are working by closing the terminal window and opening a new one. Then type some commands that exercise the preference. Files listed with ls should now be shown with color.</p>
+
+<h3 id="shell-challenge">Shell Challenge</h3>
+
+<p>To round out your shell learning experience, you are <strong>required</strong> to complete the shell challenge. In the lab repo, uncompress the <code class="language-plaintext highlighter-rouge">challenge.tar.xz</code> package. (You may want to Google on how to do this.) Complete the challenge at each level to beat this challenge.</p>
+
+<p><strong>To ensure this is graded successfully, make sure you commit the decompressed files!</strong></p>
+
+<h2 id="lab-submission">Lab Submission</h2>
+<ul>
+  <li>
+    <p>Answer the questions in the <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+  </li>
+  <li>
+    <p>To successfully submit your lab, you will need to follow the instructions in the <a href="/ecen224/lab-setup">Lab Setup</a> page, especially the <strong>Commiting and Pushing Files</strong> and <strong>Tagging Submissions</strong> section.</p>
+  </li>
+</ul>
+
+<h2 id="explore-more">Explore More!</h2>
+
+<ul>
+  <li><a href="http://ubuntu.com/tutorials/command-line-for-beginners" target="_blank" rel="noopener noreferrer">The Linux Command Line for Beginners (tutorial)</a></li>
+  <li><a href="http://linuxcommand.org/tlcl.php" target="_blank" rel="noopener noreferrer">The Linux Command Line (book online)</a></li>
+  <li><a href="https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html" target="_blank" rel="noopener noreferrer">Shell (bash) Built-in Commands - cd, pwd, echo, etc.</a></li>
+  <li><a href="https://www.gnu.org/software/coreutils/manual/html_node/index.html" target="_blank" rel="noopener noreferrer">GNU Coreutils - cp, mv, rm, mkdir, chown, etc.</a></li>
+  <li><a href="https://dev.to/abdfnx/oh-my-zsh-powerlevel10k-cool-terminal-1no0" target="_blank" rel="noopener noreferrer">Oh My Zsh + PowerLevel10k</a></li>
+</ul>
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/ecen224/js/jquery.visible.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>
